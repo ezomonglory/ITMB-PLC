@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/dist/output.css" rel="stylesheet" />
+		<title>Verification</title>
+	</head>
+	<body>
+		<div class="flex items-center">
+			<div
+				class="w-full md:w-[50%] flex flex-col space-y-8 py-8 px-6 md:px-12 lg:px-24"
+			>
+				<div class="flex flex-col items-center gap-2">
+					<div class="flex items-center w-full justify-center ml-4">
+						<div class="flex flex-col items-center">
+							<div
+								class="h-6 w-6 rounded-full bg-blue flex items-center justify-center p-2"
+							>
+								<i class="fa-solid fa-check text-white"></i>
+							</div>
+							
+						</div>
+						<hr class="h-[3px] w-[32%] bg-blue" />
+						<div class="flex flex-col items-center">
+							<div
+								class="h-6 w-6 rounded-full bg-blue flex items-center justify-center p-2"
+							>
+								<i class="fa-solid fa-circle fa-xs text-white"></i>
+							</div>
+
+							
+						</div>
+						<hr class="h-[3px] w-[32%] bg-blue" />
+						<div class="flex flex-col items-center">
+							<div class="h-6 w-6 rounded-full border border-gray-600"></div>
+							
+						</div>
+					</div>
+
+					<div class="flex w-full gap-x-[20%] justify-center">
+						<p class="text-xs text-blue">Identification</p>
+						<p class="text-xs text-blue">verification</p>
+						<p class="text-xs text-gray-300">Success</p>
+					</div>
+				</div>
+
+				<form class="flex flex-col space-y-8">
+					<label class="">
+						<p class="text-gray-300 text-xs mb-2">
+							Enter mobile number for OTP <span class="text-red-500">*</span>
+						</p>
+
+						<input class="input" type="text" />
+					</label>
+
+					<label class="">
+						<p class="text-gray-300 text-xs mb-2">
+							Enter Email for Verification <span class="text-red-500">*</span>
+						</p>
+
+						<input class="input" type="email" />
+					</label>
+
+					<label class="">
+						<p class="text-gray-300 text-xs mb-2">
+							Select document for verification <span class="text-red-500">*</span>
+						</p>
+
+						<input class="input" type="text" />
+					</label>
+					
+						<label class="w-full md:w-[50%]">
+							<p class="text-gray-300 text-xs mb-2">
+								Upload document <span class="text-red-500">*</span>
+							</p>
+
+							<input class="input" type="date" />
+						</label>
+						
+				</form>
+
+				<p class="text-red-500 text-xs">Field marked with * are compulsory</p>
+
+				<a href="Video-Verification.html">
+					<button class="btn bg-brown">Continue</button>
+				</a>
+			</div>
+
+			<!--  image  -->
+			<div class="login-img hidden md:block w-[50%] min-h-[100vh] ">
+				<div class="flex flex-col space-y-4 px-10 py-10">
+					<h1 class="text-[2rem] text-white font-medium">
+						<span class="text-brown">Our Members</span> are <br />
+						Around the world
+					</h1>
+					<p class="text-sm text-white font-extralight">
+						Over 10000 investors join us monthly
+					</p>
+
+					<div class="relative w-full bg-red-500">
+						<div class="absolute top-0 left-2 h-16 w-16 rounded-full">
+							<img src="../images/Item.png" alt="" width="100%" />
+						</div>
+
+						<div class="absolute top-0 left-[3rem] h-16 w-16 rounded-full z-10">
+							<img src="../images/Item (1).png" alt="" width="100%" />
+						</div>
+
+						<div class="absolute top-0 left-[6rem] h-16 w-16 rounded-full z-20">
+							<img src="../images/Item (2).png" alt="" width="100%" />
+						</div>
+
+						<div class="absolute top-0 left-[9rem] h-16 w-16 rounded-full z-30">
+							<img src="../images/Item (3).png" alt="" width="100%" />
+						</div>
+
+						<div
+							class="absolute top-0 left-[12rem] h-16 w-16 rounded-full z-40"
+						>
+							<img src="../images/Item (4).png" alt="" width="100%" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://kit.fontawesome.com/386ad145b9.js"
+			crossorigin="anonymous"
+		></script>
+
+        <script src="index.js"></script>
+	</body>
+</html>
+

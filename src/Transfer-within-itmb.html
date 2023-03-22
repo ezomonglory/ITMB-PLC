@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/dist/output.css" rel="stylesheet" />
+		<title>Transfer Transfer-within-itmb    </title>
+	</head>
+	<body class="bg-black">
+		<div class="bgDash px-[10px] lg:px-[60px] min-h-screen relative">
+			<div class="bg-bl"></div>
+			<!-- Dashboard header -->
+
+            
+			<div
+				style="border-bottom: 1px solid rgba(255, 255, 255, 0.12)"
+				class="flex justify-between border-transparent items-center pb-2 mb-[2.7rem] pt-4"
+			>
+
+            <!-- NavBar mobile -->
+            <div class="lg:hidden" id="navBar">
+                <i class="fa-solid fa-bars  fa-2x text-[#D8AF47]" ></i>
+            </div>
+
+            <div class="w-full  bg-[#25396E] min-h-screen flex flex-col  top-0 right-full gap-8 items-center z-50 lg:hidden pt-8 lg-hidden transition-all duration-500 fixed" id="sideBar">
+
+                <div class="absolute top-[10px] right-6 lg-hidden " id="xMark">
+                    <i class="fa-solid fa-xmark  fa-2x text-[#D8AF47]"></i>
+                </div>
+
+                <div class="py-[11px] px-[4px] overflow-hidden w-[5rem]">
+                    <img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
+                </div>
+
+                <!-- Navigation -->
+                <ul class="  flex flex-col gap-12 z-50">
+                    <a
+                    href="./Dashboard.html"
+                    class="text-[#B1AFAF] dash-list cursor-pointer"
+                    >Dashboard</a
+                >
+                <a href="./Account.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+                    >Account</a
+                >
+
+                <a href="./Card.html" class="text-[#B1AFAF] dash-list cursor-pointer">Card</a>
+
+                <a
+                    href="./Transfer.html"
+                    class="text-[#fff] dash-list cursor-pointer"
+                    >Transfer</a
+                >
+
+                <a href="./Payment.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+                    >Payment</a
+                >
+
+                <a href="./Cheque.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+                    >Cheque</a
+                >
+                </ul>
+                <hr class="h-[1px] w-full bg-brown border-none" />
+                <a href="./index.html" class="text-gray-500  dash-list">Log Out</a>
+
+            </div>
+
+
+				<div class="lg:flex gap-8 items-center z-50 hidden ">
+					<div class="py-[11px] px-[4px] overflow-hidden w-[5rem]">
+						<img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
+					</div>
+
+					<!-- Navigation -->
+					<ul class="flex justify-between w-[40%] items-center gap-8 z-50">
+						<a
+							href="./Dashboard.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Dashboard</a
+						>
+						<a href="./Account.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Account</a
+						>
+
+						<a href="./Card.html" class="text-[#B1AFAF] dash-list cursor-pointer">Card</a>
+
+						<a
+							href="./Transfer.html"
+							class="text-[#fff] dash-list cursor-pointer"
+							>Transfer</a
+						>
+
+						<a href="./Payment.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Payment</a
+						>
+
+						<a href="./Cheque.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Cheque</a
+						>
+					</ul>
+				</div>
+
+				<div class="flex gap-4 items-center relative" >
+					<i style="color: white" class="fa-regular fa-bell fa-1x"></i>
+					<div class="w-14 h-14 rounded-full">
+						<img src="../images/Profile.svg" width="100%" />
+					</div>
+					<i style="color: white" class="fa-solid fa-chevron-down fa-1x" id="logout"></i>
+
+                    <div class=" flex-col items-center justify-center w-[20rem] absolute
+                     top-[5rem] right-0  bg-blue space-y-6 rounded-lg hidden py-4" id="header-log">
+                        <div class="w-14 h-14 rounded-full">
+                            <img src="../images/Profile.svg" width="100%" />
+                        </div>
+
+                        <h1 class="text-gray-500 w-full text-center">Ezomon Glory</h1>
+
+                        <hr class="h-[1px] w-full bg-brown border-none" />
+                        <a href="./index.html" class="text-gray-500  dash-list">Log Out</a>
+        
+                        
+                    </div>
+				</div>
+			</div>
+
+
+			<div class="flex gap-2">
+				<div class="w-full lg:w-[80%] flex flex-col space-y-8">
+					<div
+						class="bg-[#EBF0F0] rounded-[13px] w-full lg:w-[70%] mx-auto justify-between flex items-center p-[13px]"
+					>
+						<a
+							href="./Transfer.html"
+							class="w-[30%] text-xs text-center text-gray-500 rounded-lg items-center py-[10px]"
+						>
+							To Own Account
+						</a>
+
+						<a
+							href="./Transfer-within-itmb.html"
+							class="w-[30%] text-xs bg-[#D8AF47] text-white text-center rounded-lg items-center py-[10px]"
+						>
+							Within ITMB
+						</a>
+
+						<a
+							href="./Transfer-other-account.html"
+							class="w-[30%] text-xs text-gray-500 text-center rounded-lg items-center py-[10px]"
+						>
+							Other Account
+						</a>
+					</div>
+
+
+					<a href="./Change-limit.html" class="text-white ml-4 text-sm">
+						<p>Transfer Limit: <span>NGN 5,000,000.00</span></p>
+						<p class="text-xs">Tap to change limit</p>
+					</a>
+
+					<div class="bg-[#EBF0F0] rounded-xl w-full py-[30px] gap-[60px]">
+						<div class=" w-[95%] sm:w-[70%] mx-auto flex flex-col gap-8">
+							<div class="flex justify-between flex-col sm:flex-row space-y-4 sm:space-y-0">
+								<label class="flex flex-col space-y-2 w-full sm:w-[50%]">
+									<h1>Beneficiary Bank</h1>
+									<select class="input">
+										<option value="Zenith Bank">Zenith Bank</option>
+										<option value="Access Bank">Access Bank</option>
+										<option value="EcoBank">EcoBank</option>
+										<option value="WEMA Bank">WEMA Bank</option>
+										<option value="Keystone Bank">Keystone Bank</option>
+										<option value="Kuda Bank">Kuda Bank</option>
+										<option value="Opay Bank">Opay Bank</option>
+										<option value="First Bank">First Bank</option>
+										<option value="UBA">UBA</option>
+									</select>
+								</label>
+
+								<label class="flex flex-col space-y-2">
+									<h1>Beneficiary Account No</h1>
+
+									<input
+										class="input"
+										type="number"
+									/>
+								</label>
+							</div>
+
+							<div class="flex justify-between flex-col sm:flex-row space-y-4 sm:space-y-0">
+								<label class="flex flex-col space-y-2 w-full sm:w-[50%]">
+									<h1>From Account</h1>
+									<select class="input">
+										<option value="012938450-Ezomon Glory">
+											012938450-Ezomon Glory
+										</option>
+										<option value="029859604- Ezomon Glory">
+											029859604- Ezomon Glory
+										</option>
+									</select>
+								</label>
+
+								<label class="flex flex-col space-y-2">
+									<h1>Amount</h1>
+
+									<input
+										class="input"
+										type="number"
+									/>
+								</label>
+							</div>
+
+							<label class="flex flex-col space-y-2 w-full sm:w-[50%]">
+								<h1>Description</h1>
+
+								<textarea
+									class="input"									
+								></textarea>
+							</label>
+
+							<button class="dashBtn mx-auto">continue</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-[40%] min-h-screen bgRyt p-[28px]">
+					<div class="flex justify-between mb-[30px]">
+						<div>
+							<h1 class="text-white">Expence</h1>
+							<hr
+								class="dash-line"
+								style="border: 1px solid #fed7fd; width: 44px"
+							/>
+						</div>
+						<select class="text-xs bgSelect">
+							<option value="JAN">JAN</option>
+							<option value="FEB">FEB</option>
+							<option value="MAR">MAR</option>
+							<option value="APR">APR</option>
+							<option value="MAY">MAY</option>
+							<option value="JUN">JUN</option>
+							<option value="JUL">JUL</option>
+							<option value="AUG">AUG</option>
+							<option value="SEP">SEP</option>
+							<option value="OCT">OCT</option>
+							<option value="NOV">NOV</option>
+							<option value="DEC">DEC</option>
+						</select>
+					</div>
+
+					<div
+						class="bg-[#1C1B1C] rounded-[24px] p-[16px] flex justify-between mb-[30px]"
+					>
+						<div>
+							<h1 class="text-white text-[20px] mb-[10px]">Balance</h1>
+							<div class="bgBal flex items-center justify-center">
+								<div
+									class="rounded-full bg-black text-white h-[110px] w-[110px] flex items-center justify-center text-[10px]"
+								>
+									1,000,000,000.34
+								</div>
+							</div>
+						</div>
+
+						<div class="flex flex-col gap-2">
+							<div class="bg-[#202021] rounded-lg px-[20px] py-[5px]">
+								<h3 class="text-[10px] text-white">Incoming</h3>
+								<img src="../images/inc.png" />
+								<p class="text-[9px] text-right text-white">+1,000,000.00</p>
+							</div>
+
+							<div class="bg-[#202021] rounded-lg px-[20px] py-[5px]">
+								<h3 class="text-[10px] text-white">Outgoing</h3>
+								<img src="../images/out.svg" />
+								<p class="text-[9px] text-right text-white">-2,000.45</p>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div>
+							<h1 class="text-white">Cards</h1>
+							<hr
+								class="dash-line"
+								style="border: 1px solid #fed7fd; width: 24px"
+							/>
+						</div>
+
+						<div
+							class="w-[90%] mx-auto flex flex-col items-center justify-center mt-4 space-y-6"
+						>
+							<div class="bgCard flex items-center justify-center">
+								<div
+									class="bgCard-inner px-[15px] text-white flex flex-col space-y-4"
+								>
+									<div class="flex justify-between">
+										<h1 class="text-sm">Olatoye Omialabu</h1>
+										<p class="italic text-sm">ITMB PLC</p>
+									</div>
+
+									<img src="../images/atm.png" width="38px" height="28px" />
+
+									<div class="flex justify-between">
+										<p>3070-0003-3256-2022</p>
+										<div class="flex flex-col items-center justify-center">
+											<div class="flex relative">
+												<div
+													class="h-[25px] w-[25px] rounded-full absolute right-0 bg-[#EE1111] opacity-80"
+												></div>
+												<div
+													class="h-[25px] w-[25px] rounded-full absolute -right-4 bg-[#FFAD08] opacity-80"
+												></div>
+											</div>
+											<p class="text-[8px] mt-6">Mastercard</p>
+										</div>
+									</div>
+
+									<p class="text-gray-400 text-[10px]">
+										Exp. <span>12/26</span>
+									</p>
+								</div>
+							</div>
+
+							<div class="w-full flex flex-col space-y-4">
+								<div class="flex w-full">
+									<div class="w-[10%] mr-[5%]">
+										<img class="" src="../images/amazon-logo.svg" />
+									</div>
+
+									<div class="flex flex-col gap-y-1 mr-[5%] w-[30%]">
+										<h1 class="text-white text-sm">Dollar</h1>
+										<p class="text-xs text-gray-300">2 hours ago</p>
+									</div>
+
+									<div class="w-[20%] mr-[10%]">
+										<img src="../images/amazon-chart.svg" />
+									</div>
+
+									<h1 class="text-center text-[1rem] w-[20%] text-white">
+										$436.35
+									</h1>
+								</div>
+
+								<div class="flex w-full">
+									<div class="w-[10%] mr-[5%]">
+										<img class="" src="../images/facebook-logo.svg" />
+									</div>
+
+									<div class="flex flex-col gap-y-1 mr-[5%] w-[30%]">
+										<h1 class="text-white text-sm">British Pound</h1>
+										<p class="text-xs text-gray-300">2 hours ago</p>
+									</div>
+
+									<div class="w-[20%] mr-[10%]">
+										<img src="../images/facebook-chart.svg" />
+									</div>
+
+									<h1 class="text-center text-[1rem] w-[20%] text-white">
+										$436.35
+									</h1>
+								</div>
+
+								<div class="flex w-full">
+									<div class="w-[10%] mr-[5%]">
+										<img class="" src="../images/amazon-logo.svg" />
+									</div>
+
+									<div class="flex flex-col gap-y-1 mr-[5%] w-[30%]">
+										<h1 class="text-white text-sm">Euro</h1>
+										<p class="text-xs text-gray-300">2 hours ago</p>
+									</div>
+
+									<div class="w-[20%] mr-[10%]">
+										<img src="../images/amazon-chart.svg" />
+									</div>
+
+									<h1 class="text-center text-[1rem] w-[20%] text-white">
+										$436.35
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://kit.fontawesome.com/386ad145b9.js"
+			crossorigin="anonymous"
+		></script>
+
+        <script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>ITMB</title>
+</head>
+<body>
+    <div class="flex flex-col md:flex-row h-screen login-img-mobile">
+      <div class=" w-full md:w-[50%] relative">
+        <div class="w-[8rem] absolute top-0 right-2 hidden md:block ">
+            <img src="../images/logo.png" width="100%" />
+        </div>        
+        <div class="flex flex-col space-y-8  w-[95%] rounded-lg py-2 px-[24px] lg:px-[120px] mx-auto justify-center bg-white ">
+            
+            <h1 class="text-blue font-bold text-xl !mt-[2rem] md:!mt-[8rem] ">
+                Hi, Welcome!
+            </h1>
+            <form class="flex flex-col space-y-8">
+                <label class="flex flex-col space-y-2">
+                    <p class="text-xs font-extralight text-gray-400">Email or User ID</p>
+                    <input type="text" class="w-full rounded-lg border outline-none text-gray-400 border-gray-400 py-[10px] px-2" />
+                </label>
+
+                <label class="flex flex-col space-y-2">
+                    <div class="flex justify-between">
+                        <p class="text-xs font-extralight text-gray-400">password</p>
+                        <p class="text-brown text-xs font-extralight"> <a href="./forgot-password.html">Forgot Password?</a> </p>
+                    </div>
+                    <input type="password" class="input " />
+                </label>
+                
+                <div class="flex flex-col space-y-2">
+                    <a href="./Dashboard.html" class="btn bg-brown">
+                        
+                            Sign In
+                        
+                    </a>
+    
+                    <h1 class="text-gray-300 text-xs pb-8">You dont have an account? <span class="text-brown"><a href="./SignUp.html" class="text-decoration-none">Sign Up</a></span></h1>
+                </div>
+            </form>
+        </div>
+
+      </div>
+        <div class=" hidden md:w-[50%] md:flex md:flex-col md:space-y-4 login-img h-full p-12 relative">
+            <h1 class="text-white font-light text-[1.5rem] mt-12" >
+                Getting Easier <br> Pay For Any Transfer <br> <span class="text-brown">with ITMB PLC</span>
+            </h1>
+
+            <p class="text-white">install ibankcare application right now!</p>
+
+            <div class="flex gap-1 ">
+                <div class="w-[30rem] cursor-pointer -ml-[6rem]">
+                    <img src="../images/appstore.png" width="100%" />
+                </div>
+                <div class="w-[30rem]  cursor-pointer -ml-[10rem]">
+                    <img src="../images/googleplay.png" width="100%" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
