@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/dist/output.css" rel="stylesheet" />
+		<title>ATMs</title>
+	</head>
+	<body>
+		<div class="bgDash px-[10px] lg:px-[60px] min-h-screen relative">
+			 
+
+			<div
+				style="border-bottom: 1px solid rgba(255, 255, 255, 0.12)"
+				class="flex justify-between border-transparent items-center pb-2 mb-[2.7rem] pt-4"
+			>
+				<!-- NavBar mobile -->
+				<div class="lg:hidden" id="navBar">
+					<i class="fa-solid fa-bars fa-2x text-[#D8AF47]"></i>
+				</div>
+
+				<div
+					class="w-full bg-[#25396E] min-h-screen flex flex-col top-0 right-full gap-8 items-center z-50 lg:hidden pt-8 lg-hidden transition-all duration-500 fixed"
+					id="sideBar"
+				>
+					<div class="absolute top-[10px] right-6 lg-hidden" id="xMark">
+						<i class="fa-solid fa-xmark fa-2x text-[#D8AF47]"></i>
+					</div>
+
+					<div class="py-[11px] px-[4px] w-[5rem]">
+						<img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
+					</div>
+
+					<!-- Navigation -->
+					<ul class="flex flex-col gap-12 z-50">
+						<a
+							href="./Dashboard.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Dashboard</a
+						>
+						<a
+							href="./Account.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Account</a
+						>
+
+						<a
+							href="./Card.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Card</a
+						>
+
+						<a
+							href="./Transfer.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Transfer</a
+						>
+
+						<a
+							href="./Payment.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Payment</a
+						>
+
+						<a
+							href="./Cheque.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Cheque</a
+						>
+
+						<a href="./ATMs.html" class="text-white dash-list cursor-pointer"
+							>ATMs</a
+						>
+
+						<a
+							href="./Savings.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Savings</a
+						>
+					</ul>
+					<hr class="h-[1px] w-full bg-brown" />
+					<a href="./index.html" class="text-gray-500 dash-list">Log Out</a>
+				</div>
+
+				<div class="lg:flex gap-8 items-center z-50 hidden">
+					<div class="py-[11px] px-[4px] w-[5rem]">
+						<img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
+					</div>
+
+					<!-- Navigation -->
+					<ul class="flex justify-between w-[40%] items-center gap-8 z-50">
+						<a
+							href="./Dashboard.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Dashboard</a
+						>
+						<a
+							href="./Account.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Account</a
+						>
+
+						<a
+							href="./Card.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Card</a
+						>
+
+						<a
+							href="./Transfer.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Transfer</a
+						>
+
+						<a
+							href="./Payment.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Payment</a
+						>
+
+						<a
+							href="./Cheque.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Cheque</a
+						>
+
+						<a href="./ATMs.html" class="text-[#fff] dash-list cursor-pointer"
+							>ATMs</a
+						>
+
+						<a
+							href="./Savings.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Savings</a
+						>
+					</ul>
+				</div>
+
+				<div class="flex gap-4 items-center relative">
+					<i style="color: white" class="fa-regular fa-bell fa-1x"></i>
+					<div class="w-9 h-9 rounded-full">
+						<img src="../images/Profile.svg" width="100%" />
+					</div>
+					<i
+						style="color: white"
+						class="fa-solid fa-chevron-down fa-1x"
+						id="logout"
+					></i>
+
+					 <div class=" flex-col items-center justify-center w-[20rem] absolute
+                     top-[3rem] right-0  bg-white space-y-6 rounded-lg hidden py-4" id="header-log">
+                        <div class="w-20 h-20  rounded-full">
+                            <img src="../images/Profile.svg" width="100%" />
+                        </div>
+
+                        <h1 class="text-blue w-full text-center dash-list">Ezomon Glory</h1>
+                        <hr class="h-[1px] w-full bg-brown " />
+
+                        <a href="./Change-password.html" class="text-blue  dash-list"> Change Password </a>
+
+                        <a href="./Personal-details.html" class="text-blue  dash-list"> Personal Details </a>
+
+                        <a href="./index.html" class="text-blue  dash-list">Log Out</a>
+        
+                        
+                    </div>
+				</div>
+			</div>
+
+			<div class="flex gap-2 bg-[#EBF0F0] rounded-lg py-6 px-8">
+				<div class="w-full sm:w-[70%] mx-auto lg:w-[50%]">
+					<div class="flex rounded-lg overflow-hidden w-full">
+						<div
+							class="text-center text-[#D3D3D3] p-2 flex items-center justify-center bg-white"
+						>
+							Atm
+						</div>
+
+						<input
+							type="text"
+							class="px-4 py-2 text-sm bg-white border-none outline-none text-gray-500 w-full"
+							placeholder="search..."
+						/>
+
+						<div
+							class="bg-blue flex items-center justify-center p-4 rounded-r-lg cursor-pointer"
+						>
+							<i class="fa-solid fa-magnifying-glass text-white"></i>
+						</div>
+					</div>
+
+					<div
+						class="flex flex-col space-y-4 mt-4 h-[80vh] overflow-scroll scroll-hidden"
+					>
+						<div class="bg-white rounded-lg flex gap-4 items-center py-4 px-6">
+							<div class="">
+								<img src="../images/atm-img.svg" />
+							</div>
+
+							<div class="flex flex-col space-y-[11px]">
+								<h1 class="text-sm text-blue">ITMB PLC</h1>
+								<p class="text-xs text-blue">
+									<span class="text-[#F6C002]"
+										><i class="fa-solid fa-star text-[#F6C002]"></i>
+									</span>
+									4.8
+								</p>
+								<p class="text-xs font-normal text-blue">
+									11, kaura-Namada st, Garki
+								</p>
+								<p class="text-[9px] text-blue">12 miles, an hour walk</p>
+							</div>
+						</div>
+
+						<div class="bg-white rounded-lg flex gap-4 items-center py-4 px-6">
+							<div class="">
+								<img src="../images/atm-img.svg" />
+							</div>
+
+							<div class="flex flex-col space-y-[11px]">
+								<h1 class="text-sm text-blue">ITMB PLC</h1>
+								<p class="text-xs text-blue">
+									<span class="text-[#F6C002]"
+										><i class="fa-solid fa-star text-[#F6C002]"></i>
+									</span>
+									4.8
+								</p>
+								<p class="text-xs font-normal text-blue">
+									11, kaura-Namada st, Garki
+								</p>
+								<p class="text-[9px] text-blue">12 miles, an hour walk</p>
+							</div>
+						</div>
+
+						<div class="bg-white rounded-lg flex gap-4 items-center py-4 px-6">
+							<div class="">
+								<img src="../images/atm-img.svg" />
+							</div>
+
+							<div class="flex flex-col space-y-[11px]">
+								<h1 class="text-sm text-blue">ITMB PLC</h1>
+								<p class="text-xs text-blue">
+									<span class="text-[#F6C002]"
+										><i class="fa-solid fa-star text-[#F6C002]"></i>
+									</span>
+									4.8
+								</p>
+								<p class="text-xs font-normal text-blue">
+									11, kaura-Namada st, Garki
+								</p>
+								<p class="text-[9px] text-blue">12 miles, an hour walk</p>
+							</div>
+						</div>
+
+						<div class="bg-white rounded-lg flex gap-4 items-center py-4 px-6">
+							<div class="">
+								<img src="../images/atm-img.svg" />
+							</div>
+
+							<div class="flex flex-col space-y-[11px]">
+								<h1 class="text-sm text-blue">ITMB PLC</h1>
+								<p class="text-xs text-blue">
+									<span class="text-[#F6C002]"
+										><i class="fa-solid fa-star text-[#F6C002]"></i>
+									</span>
+									4.8
+								</p>
+								<p class="text-xs font-normal text-blue">
+									11, kaura-Namada st, Garki
+								</p>
+								<p class="text-[9px] text-blue">12 miles, an hour walk</p>
+							</div>
+						</div>
+
+						<div class="bg-white rounded-lg flex gap-4 items-center py-4 px-6">
+							<div class="">
+								<img src="../images/atm-img.svg" />
+							</div>
+
+							<div class="flex flex-col space-y-[11px]">
+								<h1 class="text-sm text-blue">ITMB PLC</h1>
+								<p class="text-xs text-blue">
+									<span class="text-[#F6C002]"
+										><i class="fa-solid fa-star text-[#F6C002]"></i>
+									</span>
+									4.8
+								</p>
+								<p class="text-xs font-normal text-blue">
+									11, kaura-Namada st, Garki
+								</p>
+								<p class="text-[9px] text-blue">12 miles, an hour walk</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right - Map -->
+
+				<!-- This is a map gotten from google map generator -->
+				<div class="w-[50%] hidden lg:block">
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe
+								width="100%"
+								height="100%"
+								id="gmap_canvas"
+								src="https://maps.google.com/maps?q=11%20Kaura-%20Namoda%20St,%20Garki&t=&z=11&ie=UTF8&iwloc=&output=embed"
+								frameborder="0"
+								scrolling="no"
+								marginheight="0"
+								marginwidth="0"
+							></iframe
+							><a href="https://123movies-a.com"></a><br /><style>
+								.mapouter {
+									position: relative;
+									text-align: right;
+									height: 100%;
+									width: 100%;
+								}
+							</style>
+							<!-- <a href="https://www.embedgooglemap.net">embedgooglemap.net</a> -->
+							<style>
+								.gmap_canvas {
+									overflow: hidden;
+									background: none !important;
+									height: 100%;
+									width: 100%;
+                                    border-radius: 10px;
+								}
+							</style>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://kit.fontawesome.com/386ad145b9.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="index.js"></script>
+	</body>
+</html>

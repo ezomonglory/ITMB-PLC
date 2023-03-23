@@ -7,67 +7,88 @@
 		<link href="/dist/output.css" rel="stylesheet" />
 		<title>Transfer</title>
 	</head>
-	<body >
+	<body>
 		<div class="bgDash px-[10px] lg:px-[60px] min-h-screen relative">
-			<div class="bg-bl"></div>
-			<!-- Dashboard header -->
+			 
 
-            
 			<div
 				style="border-bottom: 1px solid rgba(255, 255, 255, 0.12)"
 				class="flex justify-between border-transparent items-center pb-2 mb-[2.7rem] pt-4"
 			>
+				<!-- NavBar mobile -->
+				<div class="lg:hidden" id="navBar">
+					<i class="fa-solid fa-bars fa-2x text-[#D8AF47]"></i>
+				</div>
 
-            <!-- NavBar mobile -->
-            <div class="lg:hidden" id="navBar">
-                <i class="fa-solid fa-bars  fa-2x text-[#D8AF47]" ></i>
-            </div>
+				<div
+					class="w-full bg-[#25396E] min-h-screen flex flex-col top-0 right-full gap-8 items-center z-50 lg:hidden pt-8 lg-hidden transition-all duration-500 fixed"
+					id="sideBar"
+				>
+					<div class="absolute top-[10px] right-6 lg-hidden" id="xMark">
+						<i class="fa-solid fa-xmark fa-2x text-[#D8AF47]"></i>
+					</div>
 
-            <div class="w-full  bg-[#25396E] min-h-screen flex flex-col  top-0 right-full gap-8 items-center z-50 lg:hidden pt-8 lg-hidden transition-all duration-500 fixed" id="sideBar">
+					<div class="py-[11px] px-[4px]  w-[5rem]">
+						<img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
+					</div>
 
-                <div class="absolute top-[10px] right-6 lg-hidden " id="xMark">
-                    <i class="fa-solid fa-xmark  fa-2x text-[#D8AF47]"></i>
-                </div>
+					<!-- Navigation -->
+					<ul class="flex flex-col gap-12 z-50">
+						<a
+							href="./Dashboard.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Dashboard</a
+						>
+						<a
+							href="./Account.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Account</a
+						>
 
-                <div class="py-[11px] px-[4px] overflow-hidden w-[5rem]">
-                    <img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
-                </div>
+						<a
+							href="./Card.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Card</a
+						>
 
-                <!-- Navigation -->
-                <ul class="  flex flex-col gap-12 z-50">
-                    <a
-                    href="./Dashboard.html"
-                    class="text-[#B1AFAF] dash-list cursor-pointer"
-                    >Dashboard</a
-                >
-                <a href="./Account.html" class="text-[#B1AFAF] dash-list cursor-pointer"
-                    >Account</a
-                >
+						<a
+							href="./Transfer.html"
+							class="text-[#fff] dash-list cursor-pointer"
+							>Transfer</a
+						>
 
-                <a href="./Card.html" class="text-[#B1AFAF] dash-list cursor-pointer">Card</a>
+						<a
+							href="./Payment.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Payment</a
+						>
 
-                <a
-                    href="./Transfer.html"
-                    class="text-[#fff] dash-list cursor-pointer"
-                    >Transfer</a
-                >
+						<a
+							href="./Cheque.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Cheque</a
+						>
 
-                <a href="./Payment.html" class="text-[#B1AFAF] dash-list cursor-pointer"
-                    >Payment</a
-                >
+                        <a
+							href="./ATMs.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>ATMs</a
+						>
 
-                <a href="./Cheque.html" class="text-[#B1AFAF] dash-list cursor-pointer"
-                    >Cheque</a
-                >
-                </ul>
-                <hr class="h-[1px] w-full bg-brown border-none" />
-                <a href="./index.html" class="text-gray-500  dash-list">Log Out</a>
+                        <a
+							href="./Savings.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Savings</a
+						>
 
-            </div>
+						
+					</ul>
+					<hr class="h-[1px] w-full bg-brown " />
+					<a href="./index.html" class="text-gray-500 dash-list">Log Out</a>
+				</div>
 
-
-				<div class="lg:flex gap-8 items-center z-50 hidden ">
-					<div class="py-[11px] px-[4px] overflow-hidden w-[5rem]">
+				<div class="lg:flex gap-8 items-center z-50 hidden">
+					<div class="py-[11px] px-[4px]  w-[5rem]">
 						<img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
 					</div>
 
@@ -78,11 +99,17 @@
 							class="text-[#B1AFAF] dash-list cursor-pointer"
 							>Dashboard</a
 						>
-						<a href="./Account.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+						<a
+							href="./Account.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
 							>Account</a
 						>
 
-						<a href="./Card.html" class="text-[#B1AFAF] dash-list cursor-pointer">Card</a>
+						<a
+							href="./Card.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Card</a
+						>
 
 						<a
 							href="./Transfer.html"
@@ -90,42 +117,67 @@
 							>Transfer</a
 						>
 
-						<a href="./Payment.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+						<a
+							href="./Payment.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
 							>Payment</a
 						>
 
-						<a href="./Cheque.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+						<a
+							href="./Cheque.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
 							>Cheque</a
 						>
+
+                        <a
+							href="./ATMs.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>ATMs</a
+						>
+
+                        <a
+							href="./Savings.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Savings</a
+						>
+
+						
 					</ul>
 				</div>
 
-				<div class="flex gap-4 items-center relative" >
+				<div class="flex gap-4 items-center relative">
 					<i style="color: white" class="fa-regular fa-bell fa-1x"></i>
-					<div class="w-9 h-9  rounded-full">
+					<div class="w-9 h-9 rounded-full">
 						<img src="../images/Profile.svg" width="100%" />
 					</div>
-					<i style="color: white" class="fa-solid fa-chevron-down fa-1x" id="logout"></i>
+					<i
+						style="color: white"
+						class="fa-solid fa-chevron-down fa-1x"
+						id="logout"
+					></i>
 
-                    <div class=" flex-col items-center justify-center w-[20rem] absolute
-                     top-[5rem] right-0  bg-blue space-y-6 rounded-lg hidden py-4" id="header-log">
-                        <div class="w-9 h-9  rounded-full">
+					 <div class=" flex-col items-center justify-center w-[20rem] absolute
+                     top-[3rem] right-0  bg-white space-y-6 rounded-lg hidden py-4" id="header-log">
+                        <div class="w-20 h-20  rounded-full">
                             <img src="../images/Profile.svg" width="100%" />
                         </div>
 
-                        <h1 class="text-gray-500 w-full text-center">Ezomon Glory</h1>
+                        <h1 class="text-blue w-full text-center dash-list">Ezomon Glory</h1>
+                        <hr class="h-[1px] w-full bg-brown " />
 
-                        <hr class="h-[1px] w-full bg-brown border-none" />
-                        <a href="./index.html" class="text-gray-500  dash-list">Log Out</a>
+                        <a href="./Change-password.html" class="text-blue  dash-list"> Change Password </a>
+
+                        <a href="./Personal-details.html" class="text-blue  dash-list"> Personal Details </a>
+
+                        <a href="./index.html" class="text-blue  dash-list">Log Out</a>
         
                         
                     </div>
 				</div>
 			</div>
 
-
 			<div class="flex gap-2">
-				<div class="w-full lg:w-[80%] flex flex-col space-y-8">
+				 <div class="mx-auto w-full md:w-[80%] lg:w-[60%] flex flex-col space-y-4">
 					<div
 						class="bg-[#EBF0F0] rounded-[13px] w-full lg:w-[70%] mx-auto justify-between flex items-center p-[13px]"
 					>
@@ -156,41 +208,40 @@
 						<p class="text-xs">Tap to change limit</p>
 					</a>
 
-					<div class="bg-[#EBF0F0] rounded-xl w-full py-[30px] gap-[60px] ">
-						<div class="w-[95%] sm:w-[70%] mx-auto flex flex-col gap-8">
-                            <div class="flex justify-between flex-col sm:flex-row space-y-4 sm:space-y-0">
-                                <label class="flex flex-col space-y-2 w-full sm:w-[50%]">
-                                    <h1>Subscriber Name</h1>
-                                    <select class="input ">
-                                        <option value="">Ezomon GLory</option>
-                                    </select>
-                                </label>
-    
-                                <label class="flex flex-col space-y-2">
-                                    <h1>Amount</h1>
-    
-                                    <input
-                                        class="input"
-                                        type="num
-                                        "
-                                    />
-                                </label>
-                            </div>
-                            <label class="flex flex-col space-y-2 w-full sm:w-[50%]">
-                                <h1>Phone number</h1>
-    
-                                <input
-                                    class="input"
-                                    type="num
-                                    "
-                                />
-                            </label>
-                            
-                            <button class="dashBtn mx-auto">
-                                continue
-                            </button>
+					<div class="bg-[#EBF0F0] rounded-xl w-full py-[30px] gap-[60px]">
+						<div class="w-[85%] sm:w-[70%] mx-auto flex flex-col gap-8">
+							<div
+								class="flex justify-between flex-col sm:flex-row space-y-4 sm:space-y-0"
+							>
+								<label class="flex flex-col space-y-2 w-full sm:w-[50%]">
+									<h1>Subscriber Name</h1>
+									<select class="input">
+										<option value="">Ezomon GLory</option>
+									</select>
+								</label>
 
-                        </div>
+								<label class="flex flex-col space-y-2">
+									<h1>Amount</h1>
+
+									<input
+										class="input"
+										type="num
+                                        "
+									/>
+								</label>
+							</div>
+							<label class="flex flex-col space-y-2 w-full sm:w-[50%]">
+								<h1>Phone number</h1>
+
+								<input
+									class="input"
+									type="num
+                                    "
+								/>
+							</label>
+
+							<button class="dashBtn mx-auto">continue</button>
+						</div>
 					</div>
 				</div>
 
@@ -361,6 +412,6 @@
 			crossorigin="anonymous"
 		></script>
 
-        <script src="index.js"></script>
+		<script src="index.js"></script>
 	</body>
 </html>

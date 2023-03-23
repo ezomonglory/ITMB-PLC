@@ -5,13 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="/dist/output.css" rel="stylesheet" />
-		<title>Account</title>
+		<title>Savings</title>
 	</head>
-	<body >
+	<body class="bg-black">
 		<div class="bgDash px-[10px] lg:px-[60px] min-h-screen relative">
-			 
-
-            
+			             
 			<div
 				style="border-bottom: 1px solid rgba(255, 255, 255, 0.12)"
 				class="flex justify-between border-transparent items-center pb-2 mb-[2.7rem] pt-4"
@@ -22,7 +20,7 @@
                 <i class="fa-solid fa-bars  fa-2x text-[#D8AF47]" ></i>
             </div>
 
-            <div class="w-full  bg-[#25396E] min-h-screen flex flex-col  top-0 right-full gap-8 items-center z-50 lg:hidden pt-8 lg-hidden transition-all duration-500 fixed" id="sideBar">
+            <div class="w-full  bg-[#25396E] h-screen overflow-y-scroll pb-20 flex flex-col  top-0 right-full gap-8 items-center z-50 lg:hidden pt-8 lg-hidden transition-all duration-500 fixed" id="sideBar">
 
                 <div class="absolute top-[10px] right-6 lg-hidden " id="xMark">
                     <i class="fa-solid fa-xmark  fa-2x text-[#D8AF47]"></i>
@@ -39,7 +37,7 @@
                     class="text-[#B1AFAF] dash-list cursor-pointer"
                     >Dashboard</a
                 >
-                <a href="./Account.html" class="text-white dash-list cursor-pointer"
+                <a href="./Account.html" class="text-[#B1AFAF] dash-list cursor-pointer"
                     >Account</a
                 >
 
@@ -63,11 +61,12 @@
                 >ATMs</a
             >
 
-            <a href="./Savings.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+            <a href="./Savings.html" class="text-[#fff] dash-list cursor-pointer"
             >Savings</a
         >
                 </ul>
                 <hr class="h-[1px] w-full bg-brown " />
+
                 <a href="./index.html" class="text-gray-500  dash-list">Log Out</a>
 
             </div>
@@ -85,7 +84,7 @@
 							class="text-[#B1AFAF] dash-list cursor-pointer"
 							>Dashboard</a
 						>
-						<a href="./Account.html" class="text-white dash-list cursor-pointer"
+						<a href="./Account.html" class="text-[#B1AFAF] dash-list cursor-pointer"
 							>Account</a
 						>
 
@@ -109,7 +108,7 @@
 							>ATMs</a
 						>
 
-                        <a href="./Savings.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+                        <a href="./Savings.html" class="text-[#fff] dash-list cursor-pointer"
 							>Savings</a
 						>
 					</ul>
@@ -122,7 +121,7 @@
 					</div>
 					<i style="color: white" class="fa-solid fa-chevron-down fa-1x" id="logout"></i>
 
-                     <div class=" flex-col items-center justify-center w-[20rem] absolute
+                    <div class=" flex-col items-center justify-center w-[20rem] absolute
                      top-[3rem] right-0  bg-white space-y-6 rounded-lg hidden py-4" id="header-log">
                         <div class="w-20 h-20  rounded-full">
                             <img src="../images/Profile.svg" width="100%" />
@@ -143,37 +142,44 @@
 			</div>
 
 			<div class="flex gap-2">
-				
-                 <div class="mx-auto w-full md:w-[80%] lg:w-[60%] flex flex-col space-y-4">                    
-                    <div class="bg-[#EBF0F0] rounded-[13px] w-full lg:w-[70%] mx-auto justify-between flex items-center p-[13px]">
-                        <a href="./Account.html" class="w-[30%] text-xs bg-[#D8AF47] text-white text-center rounded-lg items-center py-[10px]">
-                            Account Statement
-                        </a>
 
-                        <a href="./Account-information.html" class="w-[30%] text-xs  text-gray-500 text-center rounded-lg items-center py-[10px]">
-                            Account Information
-                        </a>
-
-                        <a href="./Account-open.html" class="w-[30%] text-xs  text-gray-500 text-center rounded-lg items-center py-[10px]">
-                            Open Additional Account
-                        </a>
-                    </div>
-
-                    <div class="bg-[#EBF0F0] rounded-xl w-full h-[30vh] flex items-center justify-center ">                        
-                       <div class="flex gap-4 w-[95%] lg:w-[70%] mx-auto items-center act-sel">
-                        <h1 class="lg:text-[24px] ">Select Account</h1>
-                        <select class="lg:px-8 py-4 bg-white border-gray-400 border rounded-lg ">
-                            <option value="">Ezomon Glory Odion</option>
-                            <option value="">Ezomon Glory Odion</option>
-                            <option value="">Ezomon Glory Odion</option>
-                            <option value="">Ezomon Glory Odion</option>
-                        </select>
-                       </div>
-                    </div>
+            <div class="w-full md:w-[80%] mx-auto lg:w-[60%] flex flex-col space-y-8">
+                <div>
+                    <h1 class="text-white text-[60ppx] text-[40px]"> Withdraw </h1>        
                 </div>
 
+                <div class="bg-[#EBF0F0] w-full rounded-lg py-8 px-8 sm:px-12 flex gap-4 flex-col">
+                    <label class="flex flex-col gap-4">
 
-				<div class="hidden lg:block w-[40%] min-h-screen bgRyt p-[28px]">
+                        <label class="flex flex-col gap-2">
+                            <h1 class="text-gray-500">Pay From</h1>
+    
+                            <select class="input">
+                                <option value="My Savings">My Savings</option>
+                            </select>
+                        </label>
+
+                        <label class="flex flex-col gap-2">
+                            <h1 class="text-gray-500">Send To</h1>
+    
+                            <select class="input">
+                                <option value="0123456789 - Ezomon Glory">0123456789 - Ezomon Glory</option>
+                            </select>
+                        </label>
+                        <h1 class="text-gray-500">Ener Note</h1>
+                        <textarea type="text" class="input">
+
+                        </textarea>
+                    </label>
+
+                   
+
+                    <button class="dashBtn mx-auto  mt-6 ">Withdraw</button>
+                </div>              
+
+            </div>
+                
+				<div class="w-[40%] min-h-screen bgRyt p-[28px] hidden lg:block">
 					<div class="flex justify-between mb-[30px]">
 						<div>
 							<h1 class="text-white">Expence</h1>
