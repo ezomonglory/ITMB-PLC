@@ -68,7 +68,11 @@
 							Select document for verification <span class="text-red-500">*</span>
 						</p>
 
-						<input class="input" type="text" />
+						<select class="input">
+                            <option value="NIN">NIN</option>
+                            <option value="ID CARD">ID CARD</option>
+                            <option value="VOTERS CARD">VOTERS CARD</option>
+                        </select>
 					</label>
 					
 						<label class="w-full md:w-[50%]">
@@ -76,7 +80,15 @@
 								Upload document <span class="text-red-500">*</span>
 							</p>
 
-							<input class="input" type="date" />
+							<input class="input hidden" type="file" id="Upload-input" onchange="showFile(this)" />
+                            
+
+                            
+                            <div class="input flex items-center justify-center py-6 cursor-pointer overflow-hidden" id="upload-btn" onclick="uploadDocument()" >
+                                <i class="fa-solid fa-circle-plus fa-2xl text-gray-500" id="plus"></i>   
+                                
+                                <img src="" class="hidden rounded-lg" id="input-image" />
+                            </div>
 						</label>
 						
 				</form>
