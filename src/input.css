@@ -54,6 +54,10 @@ body {
 	.input {
 		@apply w-full outline-none text-gray-400 rounded-lg border border-gray-400  py-[10px] px-2;
 	}
+
+    #sideBar{
+
+    }
 }
 
 @media (max-width: 767px) {
@@ -91,7 +95,7 @@ border-radius: 24px;
 position:relative; */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
 	.bgDash {
 		background: #25396e;        
 	}
@@ -141,11 +145,12 @@ position:relative; */
 .bgRyt {
 	background: rgba(255, 255, 255, 0.08);
 	border-radius: 30px;
+    display: block !important;
 }
 
-@media (max-width:1024px){
+@media (max-width:1200px){
     .bgRyt{
-        display: none;
+        display: none !important;
     }
 }
 

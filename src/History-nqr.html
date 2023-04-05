@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/dist/output.css" rel="stylesheet" />
+		<title>History NQR</title>
+	</head>
+	<body>
+        <div class="bgDash px-[10px] lg:px-[60px] min-h-screen relative">
+			
+			<!-- Dashboard header -->
+			<div
+				style="border-bottom: 1px solid rgba(255, 255, 255, 0.12)"
+				class="flex justify-between border-transparent items-center pb-2 mb-[2.7rem] pt-4"
+			>
+
+            <!-- NavBar mobile -->
+            <div class="hl:hidden" id="navBar">
+                <i class="fa-solid fa-bars  fa-2x text-[#D8AF47]" ></i>
+            </div>
+
+            <div class="w-full  bg-[#25396E]  flex flex-col  top-0 right-full gap-8 items-center z-50 lg:hidden pt-8 lg-hidden transition-all duration-500 absolute" id="sideBar">
+
+                <div class="absolute top-[10px] right-6 lg-hidden " id="xMark">
+                    <i class="fa-solid fa-xmark  fa-2x text-[#D8AF47]"></i>
+                </div>
+
+                <div class="py-[11px] px-[4px]  w-[5rem]">
+                    <img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
+                </div>
+
+                <!-- Navigation -->
+                <ul class="  flex flex-col gap-12 z-50">
+                    <a
+                        href="./Dashboard.html"
+                        class="text-[#B1AFAF] dash-list cursor-pointer"
+                        >Dashboard</a
+                    >
+                    <a
+                        href="./Account.html"
+                        class="text-[#B1AFAF] dash-list cursor-pointer"
+                        >Account</a
+                    >
+
+                    <a href="./Card.html" class="text-[#B1AFAF] dash-list cursor-pointer">Card</a>
+
+                    <a
+                        href="./Transfer.html"
+                        class="text-[#B1AFAF] dash-list cursor-pointer"
+                        >Transfer</a
+                    >
+
+                     <a href="./Payment.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+                        >Payment</a
+                    >
+
+                    <a href="./Cheque.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+                        >Cheque</a
+                    >                 
+
+                        <a
+							href="./ATMs.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>ATMs</a
+						>
+
+                          <a href="./Savings.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Savings</a
+						>
+
+                        <a href="./NQR.html" class="text-[#fff] dash-list cursor-pointer"
+                        >NQR</a
+                    >
+                </ul>
+                <hr class="h-[1px] w-full bg-brown " />
+                <a href="./index.html" class="text-gray-500  dash-list">Log Out</a>
+
+            </div>
+
+
+
+				<div class="hl:flex gap-8 items-center z-50 hidden">
+					<div class="py-[11px] px-[4px]  w-[5rem]">
+						<img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
+					</div>
+
+					<!-- Navigation -->
+					<ul class="flex justify-between w-[40%] items-center gap-8 z-50">
+						<a
+							href="./Dashboard.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Dashboard</a
+						>
+						<a
+							href="./Account.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Account</a
+						>
+
+						<a href="./Card.html" class="text-[#B1AFAF] dash-list cursor-pointer">Card</a>
+
+						<a
+							href="./Transfer.html"
+							class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Transfer</a
+						>
+
+						<a href="./Payment.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Payment</a
+						>
+
+						<a href="./Cheque.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Cheque</a
+						>
+
+                        <a href="./ATMs.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+							>ATMs</a
+						>
+
+                          <a href="./Savings.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+							>Savings</a
+						>
+
+                        <a href="./NQR.html" class="text-[#fff] dash-list cursor-pointer"
+                        >NQR</a
+                    >
+					</ul>
+				</div>
+
+				<div class="flex gap-4 items-center relative" >
+					<i style="color: white" class="fa-regular fa-bell fa-1x"></i>
+					<div class="w-9 h-9  rounded-full">
+						<img src="../images/Profile.svg" width="100%" />
+					</div>
+					<i style="color: white" class="fa-solid fa-chevron-down fa-1x" id="logout"></i>
+
+                     <div class=" flex-col items-center justify-center w-[20rem] absolute
+                     top-[3rem] right-0  bg-white space-y-6 rounded-lg hidden py-4" id="header-log">
+                        <div class="w-20 h-20  rounded-full">
+                            <img src="../images/Profile.svg" width="100%" />
+                        </div>
+
+                        <h1 class="text-blue w-full text-center dash-list">Ezomon Glory</h1>
+                        <hr class="h-[1px] w-full bg-brown " />
+
+                        <a href="./Change-password.html" class="text-blue  dash-list"> Change Password </a>
+
+                        <a href="./Personal-details.html" class="text-blue  dash-list"> Change Personal Details </a>
+
+                        <a href="./FAQs.html" class="text-blue  dash-list"> FAQs </a>
+                        
+                        <a href="./Contact.html" class="text-blue  dash-list"> Contact </a>
+
+                        <a href="./index.html" class="text-blue  dash-list">Log Out</a>
+        
+                        
+                    </div>
+				</div>
+			</div>
+				
+            <div class="  w-[95%] md:w-[80%] lg:w-[60%] mx-auto bg-white rounded-md  py-[50px]">
+                <div class="flex flex-col space-y-[50px] lg:w-[60%] md:w-[80%] w-[90%] mx-auto">
+                    <div class="rounded-md flex justify-between px-[20px] py-[13px] border border-[#000]">
+                        <a href="./Generate-nqr.html" class="flex flex-col space-y-2 items-center justify-center">
+                            <img src="../images/qr-icon.svg" class="w-[30px] h-[30px]"  />
+                            <p class="text-gray-500">Generate</p>
+                        </a>
+    
+    
+                        <a href="./History-nqr.html" class="flex flex-col space-y-2 items-center justify-center">
+                            <img src="../images/history-icon.svg" class="w-[30px] h-[30px]"  />
+                            <p class="text-gray-500">History</p>
+                        </a >
+                    </div>
+    
+                    <div class="flex flex-col space-y-[25px] h-[70vh] overflow-scroll scroll-hidden">
+                        <a href="./Each-hist.html" class="border border-black rounded-md px-4 py-2 group cursor-pointer space-y-4 ">
+                            <div class="flex items-center justify-between">
+                                <h1 class="text-black font-bold">https://itunes.com</h1>
+                                <!-- This is the icon to perform the delete operation -->
+                                <img src="../images/delete-icon.svg" class="group-hover:block xl:hidden block " />
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-gray-400">Data</p>
+
+                                <p class="text-sm text-gray-400">16 Dec 2022, 9:30 pm</p>
+                            </div>
+                        </a>
+                   
+                    </div>
+                </div>
+
+            </div>
+             
+                
+            </div>
+			
+		</div>
+
+		<script
+			src="https://kit.fontawesome.com/386ad145b9.js"
+			crossorigin="anonymous"
+		></script>
+
+        <script src="index.js"></script>
+	</body>
+</html>

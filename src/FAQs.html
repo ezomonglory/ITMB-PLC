@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="/dist/output.css" rel="stylesheet" />
-		<title>Personal Details</title>
+		<title>FAQs</title>
 	</head>
 	<body>
 		<div class="bgDash px-[10px] lg:px-[60px] min-h-screen relative">
@@ -144,9 +144,9 @@
 
                         <a href="./Change-password.html" class="text-blue  dash-list"> Change Password </a>
 
-                        <a href="./Personal-details.html" class="text-[#D8AF47]   dash-list"> Change Personal Details </a>
+                        <a href="./Personal-details.html" class="text-blue  dash-list"> Change Personal Details </a>
 
-                        <a href="./FAQs.html" class="text-blue  dash-list"> FAQs </a>
+                        <a href="./FAQs.html" class="text-[#D8AF47]  dash-list"> FAQs </a>
                         
                         <a href="./Contact.html" class="text-blue  dash-list"> Contact </a>
 
@@ -161,61 +161,48 @@
 
             <div class="w-full md:w-[80%] mx-auto lg:w-[60%] flex flex-col space-y-8">
                 <div>
-                    <h1 class="text-white text-[60ppx] text-[40px]"> Personal Details </h1>                    
+                    <h1 class="text-white text-[60ppx] text-[40px]">FAQ</h1>
+                   
                 </div>
 
-                <div class="bg-[#EBF0F0] w-full rounded-lg py-8 px-8 sm:px-12 flex gap-4 flex-col">
-                    <label class="flex flex-col gap-2">
-                        <h1 class="text-gray-500">Phone Number</h1>
-                        <input type="n"umber class="input" />
-                    </label>                
+                <div class="bg-[#EBF0F0] w-full rounded-lg py-8 px-6 md:px-12 flex flex-col space-y-[20px]">
+                    <!-- <h1 class="text-blue text-[20px]">Total Balance</h1>
+                    <p class="text-[40px] text-blue">N 0.00</p> -->
 
-                    <label class="flex flex-col gap-2">
-                        <h1 class="text-gray-500">Email</h1>
-                        <input type="email" class="input" />
-                    </label>
+                    <a href="#" class="flex justify-between items-center pr-[20px] pl-[20px] md:pl-[85px] py-[20px] rounded-md border-[#D8D8D8] bg-white border">
+                        <h1 class=" text-[16px] md:text-[20px] lg:text-[24px] tracking-[-0.8px] leading-[29px] text-[#010509] ">Mortgage Banking </h1>
 
-                    <label class="flex flex-col gap-2">
-                        <h1 class="text-gray-500">Gender</h1>
+                        <img src="../images/ryt-arr.svg" class="md:w-[20px] md:h-[65px] lg:w-[26px] lg:h-[72px]" />
+                    </a>
 
-                        <select class="input">
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>                            
-                        </select>
-                    </label>
+                    <a href="#" class="flex justify-between items-center pr-[20px] pl-[20px] md:pl-[85px] py-[20px] rounded-md border-[#D8D8D8] bg-white border">
+                        <h1 class=" text-[16px] md:text-[20px] lg:text-[24px] tracking-[-0.8px] leading-[29px] text-[#010509] ">Individual Banking </h1>
 
+                        <img src="../images/ryt-arr.svg" class="md:w-[20px] md:h-[65px] lg:w-[26px] lg:h-[72px]" />
+                    </a>
+
+                    <a href="#" class="flex justify-between items-center pr-[20px] pl-[20px] md:pl-[85px] py-[20px] rounded-md border-[#D8D8D8] bg-white border">
+                        <h1 class=" text-[16px] md:text-[20px] lg:text-[24px] tracking-[-0.8px] leading-[29px] text-[#010509] ">Business Banking</h1>
+
+                        <img src="../images/ryt-arr.svg" class="md:w-[20px] md:h-[65px] lg:w-[26px] lg:h-[72px]" />
+                    </a>
+                </div>
+
+                <!-- <div class="flex gap-6 justify-center items-center sm:flex-row flex-col">
                   
-                    <label class="flex flex-col gap-2">
-                        <h1 class="text-gray-500">Marital Status</h1>
+                    <a  href="./My-savings.html" class="bg-[#CCF0FE] rounded-lg flex flex-col gap-2 items-center justify-center py-6 px-14">                        
+                        <img src="../images/savings.svg"  />
 
-                        <select class="input">
-                            <option value="Single">Single</option>
-                            <option value="Married">Married</option>                            
-                        </select>
-                    </label>
+                        <h1 class="text-[30px] text-blue ">My Savings</h1>
+                    </a>
 
-                    <label class="flex flex-col gap-2">
-                        <h1 class="text-gray-500">Date of birth</h1>
-                        <input type="date" class="input" />
-                    </label>
 
-                    <label class="flex flex-col gap-2">
-                        <h1 class="text-gray-500">Address Line 1</h1>
-                        <input type="text" class="input" />
-                    </label>
+                      <a  href="./Group-savings.html" class="bg-[#CCF0FE] rounded-lg flex flex-col gap-2 items-center justify-center py-6 px-8">
+                        <img src="../images/savings.svg"  />
 
-                    <label class="flex flex-col gap-2">
-                        <h1 class="text-gray-500">Address Line 2</h1>
-                        <input type="text" class="input" />
-                    </label>
-
-                    <label class="flex flex-col gap-2">
-                        <h1 class="text-gray-500">Address Line 3</h1>
-                        <input type="text" class="input" />
-                    </label>
-
-                    <button class="dashBtn mx-auto  mt-6 ">Submit</button>
-                </div>              
+                        <h1 class="text-[30px] text-blue ">Group Savings</h1>
+                    </a>
+                </div> -->
 
             </div>
                 

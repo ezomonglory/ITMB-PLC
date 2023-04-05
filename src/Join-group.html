@@ -16,11 +16,11 @@
 			>
 
             <!-- NavBar mobile -->
-            <div class="lg:hidden" id="navBar">
+            <div class="hl:hidden" id="navBar">
                 <i class="fa-solid fa-bars  fa-2x text-[#D8AF47]" ></i>
             </div>
 
-            <div class="w-full  bg-[#25396E] h-screen overflow-y-scroll pb-20 flex flex-col  top-0 right-full gap-8 items-center z-50 lg:hidden pt-8 lg-hidden transition-all duration-500 fixed" id="sideBar">
+            <div class="w-full  bg-[#25396E] h-screen overflow-y-scroll pb-20 flex flex-col  top-0 right-full gap-8 items-center z-50 hl:hidden pt-8 lg-hidden transition-all duration-500 fixed" id="sideBar">
 
                 <div class="absolute top-[10px] right-6 lg-hidden " id="xMark">
                     <i class="fa-solid fa-xmark  fa-2x text-[#D8AF47]"></i>
@@ -61,9 +61,13 @@
                 >ATMs</a
             >
 
-            <a href="./Savings.html" class="text-[#fff] dash-list cursor-pointer"
-            >Savings</a
-        >
+             <a href="./Savings.html" class="text-[#fff] dash-list cursor-pointer"
+							>Savings</a
+						>
+
+                        <a href="./NQR.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+                        >NQR</a
+                    >
                 </ul>
                 <hr class="h-[1px] w-full bg-brown " />
 
@@ -72,7 +76,7 @@
             </div>
 
 
-				<div class="lg:flex gap-8 items-center z-50 hidden ">
+				<div class="hl:flex gap-8 items-center z-50 hidden ">
 					<div class="py-[11px] px-[4px]  w-[5rem]">
 						<img src="../images/logo.png" width="100%" class="rounded-[1rem]" />
 					</div>
@@ -108,9 +112,14 @@
 							>ATMs</a
 						>
 
-                        <a href="./Savings.html" class="text-[#fff] dash-list cursor-pointer"
+                         <a href="./Savings.html" class="text-[#fff] dash-list cursor-pointer"
 							>Savings</a
 						>
+
+                        <a href="./NQR.html" class="text-[#B1AFAF] dash-list cursor-pointer"
+                        >NQR</a
+                    >
+
 					</ul>
 				</div>
 
@@ -132,7 +141,11 @@
 
                         <a href="./Change-password.html" class="text-blue  dash-list"> Change Password </a>
 
-                        <a href="./Personal-details.html" class="text-blue  dash-list"> Personal Details </a>
+                        <a href="./Personal-details.html" class="text-blue  dash-list"> Change Personal Details </a>
+
+                        <a href="./FAQs.html" class="text-blue  dash-list"> FAQs </a>
+                        
+                        <a href="./Contact.html" class="text-blue  dash-list"> Contact </a>
 
                         <a href="./index.html" class="text-blue  dash-list">Log Out</a>
         
@@ -145,42 +158,36 @@
 
             <div class="w-full md:w-[80%] mx-auto lg:w-[60%] flex flex-col space-y-8">
                 <div>
-                    <h1 class="text-white text-[60ppx] text-[40px]"> Group Savings</h1>
+                    <h1 class="text-white text-[60ppx] text-[40px]"> Savings</h1>
                     <p class="text-[16px] md:text-[20px] text-white">Let’s see how well you are doing</p>
+
                 </div>
 
-                <div class="bg-[#EBF0F0] w-full rounded-lg py-8 px-12 flex gap-4 items-center flex-col sm:flex-row justify-center">
-                    <div class="w-[50%]">
-                        <h1 class="text-blue text-[20px]">Total Balance</h1>
-                    <p class="text-[30px] sm:text-[40px] text-blue">N 0.00</p>
-                    </div>
+                <div class="bg-[#EBF0F0] w-full rounded-lg py-8 px-8 sm:px-12 flex gap-4 flex-col">
+                    <div class="flex rounded-lg overflow-hidden w-full">
+						
+                        <label class="flex flex-col space-y-2">
 
-                    <div class="flex gap-2 w-full">
-                        <a href="./Create-target.html" class="bg-blue text-white text-center w-[50%] py-2 rounded-lg">
-                            Create a target
-                        </a>
+                            <p class="text-[#5C616F]">Join Group</p>
+						<input
+							type="text"
+							class="input"
+							placeholder="Enter group name"
+						/>
+                        </label>
+						
+					</div>
 
-                        <a href="./Join-target.html" class="bg-blue text-white text-center w-[50%] py-2 rounded-lg">
-                            Join a target
-                        </a>
-                    </div>
+
+
+
+                    <button class="dashBtn mx-auto  mt-12 bg-blue ">Submit</button>                
                 </div>
 
-                <div class="flex gap-6 flex-col">
-                    <div class="mb-1">
-                        <h1 class="text-white text-sm">Transactions</h1>
-                        <hr
-                            class="dash-line bg-brown"
-                            style="border: 1px solid #d8af47"
-                        />
-                    </div>
-                    
-                    <!-- Transactions  -->
-                </div>
 
             </div>
                 
-				<div class="w-[40%] min-h-screen bgRyt p-[28px] hidden lg:block">
+				<div class="w-[40%] min-h-screen bgRyt p-[28px] hidden hl:block">
 					<div class="flex justify-between mb-[30px]">
 						<div>
 							<h1 class="text-white">Expence</h1>
