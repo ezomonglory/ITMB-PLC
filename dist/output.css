@@ -660,6 +660,10 @@ video {
   left: 33%;
 }
 
+.-bottom-6 {
+  bottom: -1.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
